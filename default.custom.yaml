@@ -1,34 +1,18 @@
-# default.custom.yaml
-# save it to:
-#   ~/.config/ibus/rime  (linux)
-#   ~/Library/Rime       (macos)
-#   %APPDATA%\Rime       (windows)
-
-#主要目的为设置“方案设置”快捷键、改善设置显示方式。
-
-
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Thu Dec 19 20:02:30 2024"
+  rime_version: 1.11.2
 patch:
-  schema_list:
-    - {schema: smzm}
-  
-  switcher:
-    caption: 〔输入法设置〕 
-    hotkeys:
-      - Control+grave
-      - Control+Shift+grave   #win系统中可能和切换输入法冲突。
-      - F4    #可能与其它软件快捷冲突。
-      #- Control+Shift+S  
-    save_options: 
-      - full_shape
-      - ascii_punct
-      - simplification
-      - extended_charset
-      - zh_hant
-      - zh_hans
-      - zh_hant_tw
-    fold_options: false
-    abbreviate_options: true
-    option_list_separator: '／'
-  
   menu:
     page_size: 9
+  schema_list:
+    - {schema: smzm}
+  switcher:
+    abbreviate_options: true
+    caption: "〔输入法设置〕"
+    fold_options: false
+    hotkeys: ["Control+grave", "Control+Shift+grave", F4]
+    option_list_separator: "／"
+    save_options: [full_shape, ascii_punct, simplification, extended_charset, zh_hant, zh_hans, zh_hant_tw]
