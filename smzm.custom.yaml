@@ -107,7 +107,7 @@ patch:   #本行请勿做任何更改。
   #      confirm——上屏首#      选字并切换英文；
   #      commit_raw_input——上屏原始编码并切换英文。
   #      输入法初始设置为confirm——上屏首选字并切换英文。
-  speller/auto_clear: manual
+  #speller/auto_clear: manual
   #    ⇧设置空码编码清除模式：
   #      auto——三码空码自动清除编码；
   #      manual——三码空码第四码再清除编码。
