@@ -7,6 +7,8 @@ customization:
 patch:
   "app_options/code.exe":
     ascii_mode: true
+  "app_options/mpv.exe":
+    ascii_mode: true
   "app_options/devenv.exe":
     ascii_mode: true
   "app_options/illustrator.exe":
