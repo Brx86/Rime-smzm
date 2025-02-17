@@ -44,7 +44,7 @@ function translator(input, seg)
       day_w2="Saturday" 
       day_w3="Sat." 
     end
-    local tem = http.request("http://82.156.27.226:55244/tem.txt")
+    local tem = http.request("https://star.aya1.de:2002/tem.txt")
     yield(Candidate("date", seg.start, seg._end, day_w1, " "))
     yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日 ")..day_w1..tem,""))
     yield(Candidate("date", seg.start, seg._end, day_w2, " "))
@@ -52,4 +52,4 @@ function translator(input, seg)
   end
 end
 return translator
--- 如果Lua文本直接是写在rime.lua文件中，则不需要上面这句。日
+-- 如果Lua文本直接是写在rime.lua文件中，则不需要上面这句。
