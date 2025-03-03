@@ -44,7 +44,7 @@ function translator(input, seg)
       day_w2="Saturday" 
       day_w3="Sat." 
     end
-    local tem = http.request("https://star.aya1.de:2002/tem.txt")
+    local tem = http.request("https://tem.udp0.com:8443/")
     yield(Candidate("date", seg.start, seg._end, day_w1, " "))
     yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日 ")..day_w1..tem,""))
     yield(Candidate("date", seg.start, seg._end, day_w2, " "))
