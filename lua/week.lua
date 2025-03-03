@@ -4,7 +4,7 @@ week_translator: 将 `wee` 翻译为当前日期
 local http = require("simplehttp")
 
 function translator(input, seg)
-  if (input == "wee" or input == "lbj" ) then
+  if (input == "wee") then
     local day_w=os.date("%w")
     local day_w1=""
     local day_w2=""
