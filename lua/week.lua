@@ -46,7 +46,7 @@ function translator(input, seg)
     end
     local tem = http.request("http://tem.udp0.com:880/")
     yield(Candidate("date", seg.start, seg._end, day_w1, " "))
-    yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日 ")..day_w1..tem,""))
+    yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日 ")..day_w1.." "..tem,""))
     yield(Candidate("date", seg.start, seg._end, day_w2, " "))
     yield(Candidate("date", seg.start, seg._end, day_w3, " "))
   end
