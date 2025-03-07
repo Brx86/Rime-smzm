@@ -2,17 +2,18 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.3
   generator: "Rime::SwitcherSettings"
-  modified_time: "Thu Dec 19 20:02:30 2024"
+  modified_time: "Wed Mar  5 16:09:32 2025"
   rime_version: 1.11.2
 patch:
   menu:
     page_size: 9
   schema_list:
     - {schema: smzm}
+    - {schema: dyamz}
   switcher:
     abbreviate_options: true
     caption: "〔输入法设置〕"
     fold_options: false
-    hotkeys: ["Control+grave", "Control+Shift+grave", F4]
+    hotkeys: ["Control+grave", F4]
     option_list_separator: "／"
     save_options: [full_shape, ascii_punct, simplification, extended_charset, zh_hant, zh_hans, zh_hant_tw]
