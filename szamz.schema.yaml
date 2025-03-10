@@ -80,8 +80,8 @@ speller:
 
 translator:
   dictionary: szamz
-  preedit_format:
-    - xform/(^| )([a-z])/\1\u\2/g
+  # preedit_format:
+  #   - xform/(^| )([a-z])/\1\u\2/g
 
 abc_segmentor:
   extra_tags:

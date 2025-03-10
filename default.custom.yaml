@@ -2,14 +2,14 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.3
   generator: "Rime::SwitcherSettings"
-  modified_time: "Wed Mar  5 16:09:32 2025"
+  modified_time: "Mon Mar 10 09:26:48 2025"
   rime_version: 1.11.2
 patch:
   menu:
     page_size: 9
   schema_list:
     - {schema: smzm}
-    - {schema: dyamz}
+    - {schema: szamz}
   switcher:
     abbreviate_options: true
     caption: "〔输入法设置〕"
